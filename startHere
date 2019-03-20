@@ -1,0 +1,14 @@
+!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery Basics</title>
+	</head>
+
+<!-- Add the JQuery Library from Google or your own js folder in your website folder-->
+<script type="text/javascript"></script>
+
+
+<body>
+
+</body>
+</html>
