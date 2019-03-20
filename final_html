@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery Basics</title>
+	</head>
+<!--css-->
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+
+<!-- Host the jQuery Library from Google or your own js folder in your website folder, this one is hosted in our site-->
+<script type="text/javascript" scrc="../js/jquery-3.3.1.min.js"></script>
+
+
+<!-- this second one is hosted via Google-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- jQuery Actions and Events 
+$= speak jQuery, 
+document=our current page, 
+ready=wait for page to load before running function
+-->
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+					$("button#hide").click(function(){
+						$(this).hide();
+					});
+			
+					$("button#hideh1").click(function(){
+						$("h1").toggle();
+					});
+
+					$("button#hamburger").click(function(){
+						$("nav").toggle();
+					});
+
+					$("button#green").click(function(){
+						$("body").addClass("green").removeClass("red").removeClass("blue");
+					});
+
+					$("button#red").click(function(){
+						$("body").addClass("red").removeClass("green").removeClass("blue");
+					});
+
+					$("button#blue").click(function(){
+						$("body").addClass("blue").removeClass("red").removeClass("green");
+					});
+
+
+		});
+
+</script>
+
+<body>
+	<h1> JQuery baby!</h1>
+	
+	<button id="hide">Click me to make me disappear!</button>
+	
+	<button id="hideh1">Click me to make me H1 disappear and reappear!</button>
+	
+	<button id="hamburger">☰</button>
+	
+	<button id="green">Click me to change the background color to green</button>
+
+	<button id="red">Click me to change the background color to red</button>
+
+	<button id="blue">Click me to change the background color to blue</button>
+
+
+		<nav>
+			<ul> 
+				<li><a href="http://www.google.com">Link1</a></li>	
+				<li><a href="http://www.google.com">Link2</a></li>
+				<li><a href="http://www.google.com">Link3</a></li>
+				<li><a href="http://www.google.com">Link4</a></li>
+				<li><a href="http://www.google.com">Link5</a></li>
+			</ul>
+
+		</nav>
+
+
+
+</body>
+</html>
