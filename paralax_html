@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery Basics</title>
+
+<!--css-->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<!-- Host the jQuery Library from Google or your own js folder in your website folder, this one is hosted in our site-->
+
+
+<!-- this second one is hosted via Google-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- jQuery Actions and Events 
+$= speak jQuery, 
+document=our current page, 
+ready=wait for page to load before running function
+-->
+<script src="js/stellar.js-master/jquery.stellar.min.js" ></script>
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+					$("button#hide").click(function(){
+						$(this).hide();
+					});
+			
+					$("button#hideh1").click(function(){
+						$("h1").toggle();
+					});
+
+					$("button#hamburger").click(function(){
+						$("nav").toggle();
+					});
+
+		});
+</script>
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(window).stellar();
+	});
+
+
+</script>
+
+
+<!--
+data-stellar-background-ratio="#"
+to control the scroll speed of background images in relation to the page scroll-->
+
+<!--   
+data-stellar-ratio="#" 
+control the scroll speed of the element in relation to the page scroll
+
+-->
+
+
+
+	</head>
+
+<body>
+
+
+
+	<h1> JQuery baby!</h1>
+	
+	<button id="hide">Click me to make me disappear!</button>
+	
+	<button id="hideh1">Click me to make me H1 disappear and reappear!</button>
+	
+	<button id="hamburger">☰</button>
+	
+	<button>Click me to change the background color</button>
+
+
+		<nav>
+			<ul> 
+				<li><a href="http://www.google.com">Link1</a></li>	
+				<li><a href="http://www.google.com">Link2</a></li>
+				<li><a href="http://www.google.com">Link3</a></li>
+				<li><a href="http://www.google.com">Link4</a></li>
+				<li><a href="http://www.google.com">Link5</a></li>
+			</ul>
+
+		</nav>
+	<section id="section-one" class="red" data-stellar-background-ratio="-1"> <h2>NEGATIVE ONE</h2> </section>
+	<section id="section-two" class="orange" data-stellar-background-ratio="0"> <h2>ZERO</h2>  </section>
+	<section id="section-three" class="blue" data-stellar-background-ratio="2">  <h2>TWO</h2> </section>
+
+	<figure id="figure-one" class="red" data-stellar-ratio="-1" >  <h2>NEGATIVE 1</h2> </figure>
+	<figure id="figure-two" class="orange" data-stellar-ratio="0" >  <h2>ZEROOO</h2> </figure>
+	<figure id="figure-three" class="blue" data-stellar-ratio="4" >   <h2>FOURRR</h2> </figure>
+
+
+
+</body>
+</html>
