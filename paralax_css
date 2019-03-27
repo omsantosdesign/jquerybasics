@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+section {
+	width:100vw;
+	height: 35vh;
+	padding-top: 15vh;
+
+}
+
+h1 {
+	font-size: 8vw;
+	text-align: center;
+}
+
+h2 {
+
+	font-size: 1.5vh;
+	text-align: center;
+}
+
+figure {
+		width: 15vw;
+		height: 15vw;
+		position: absolute;
+		padding: 7vw 0.5vw 0 0.5vw;
+		}
+
+
+#figure-one { 
+	left:5vw;
+	top:45vh; 
+}
+
+#figure-two { 
+	left:27vw;
+	top:45vh; 
+}
+
+#figure-three { 
+	left:50vw;
+	top:45vh; 
+}
+
+#section-one { background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/bb/Hawaii_turtle_2.JPG"); }
+#section-two { background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/bb/Hawaii_turtle_2.JPG"); }
+#section-three { background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/bb/Hawaii_turtle_2.JPG"); }
+
+.red {background-color: red;}
+
+
+.orange {background-color: orange;}
+
+.blue {background-color: blue;}
